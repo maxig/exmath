@@ -2,6 +2,11 @@ defmodule ExMath do
   @spec id(a) :: a when a: any
   def id(x), do: x
 
+  @spec sign(number) :: -1 | 0 | 1
+  def sign(0), do: 0
+  def sign(x) when x < 0, do: -1
+  def sign(_), do: 1
+
   @spec sum([number]) :: number
   def sum([]), do: 0
   def sum(xs), do: Enum.reduce(xs, &Kernel.+/2)
