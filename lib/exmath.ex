@@ -62,7 +62,7 @@ defmodule ExMath do
   [this blog post](https://randomascii.wordpress.com/2012/02/25/comparing-floating-point-numbers-2012-edition/)
   by Bruce Dawson.
   """
-  @spec close_enough?(number, number, number, integer) :: boolean
+  @spec close_enough?(number, number, number, non_neg_integer) :: boolean
   def close_enough?(a, b, epsilon, max_ulps) do
     a = :erlang.float a
     b = :erlang.float b 
