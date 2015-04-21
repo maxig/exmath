@@ -76,7 +76,7 @@ defmodule ExMath do
   @spec ulp_diff(float, float) :: integer
   defp ulp_diff(a, b), do: abs(as_int(a) - as_int(b))
 
-  @spec as_int(float) :: integer
+  @spec as_int(float) :: non_neg_integer
   defp as_int(x) do
     <<int :: 64>> = <<x :: float>>
     int
