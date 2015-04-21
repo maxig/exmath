@@ -1,0 +1,1 @@
+%{"primes": {:git, "git://github.com/ewildgoose/elixir-primes.git", "5c61a927cad3ba33be5642fa67be646c46a90a59", []}}
