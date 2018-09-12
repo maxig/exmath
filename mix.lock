@@ -1,1 +1,4 @@
-%{"primes": {:git, "git://github.com/ewildgoose/elixir-primes.git", "5c61a927cad3ba33be5642fa67be646c46a90a59", []}}
+%{
+  "primes": {:git, "https://github.com/ewildgoose/elixir-primes.git", "fd6bc5c806d5d544bee2cacce2694ccc36a197cd", []},
+  "priority_queue": {:hex, :priority_queue, "1.0.0", "5ff5f83a764b635e71f0e41bf78b9763bb233bbac8f5733b4b09b6730bddf866", [:mix], []},
+}

@@ -3,13 +3,14 @@ defmodule ExMath.Mixfile do
 
   def project do
     [app: :exmath,
-     version: "0.1.0",
+     version: "0.1.1",
      elixir: "~> 1.0",
-     deps: deps]
+     deps: deps(),
+     source_url: "https://github.com/maxig/exmath"]
   end
 
   def application do
-    [applications: [:logger]]
+    [applications: [:logger, :primes]]
   end
 
   defp deps do
